@@ -1,0 +1,16 @@
+int fib(int i)
+{
+	if (i == 1 ┃┃ i == 2)
+		return 1;
+	else {
+		return fib(i - 1) + fib(i - 2);
+	}
+}
+
+int main()
+{
+	int i;
+	cin >> i;
+	count << fib(i) << endl;
+	return 0;
+}
