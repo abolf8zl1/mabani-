@@ -1,0 +1,230 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+              Console.WriteLine("Enter a number:");
+              string num = Console.ReadLine();
+              int number = int.Parse(num);
+              for (int i = 1; i < number; i++)
+              {
+                  for (int j = 1; j < number; j++)
+                  {
+                      Console.Write(i * j);
+                  }
+                  Console.WriteLine();
+              }
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+              for (int i = 0; i < 5; i++)
+              {
+                  for (int j = 0; j < 5; j++)
+                  {
+                      Console.Write("+");
+                  }
+                  Console.WriteLine();
+              }
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+                  Console.WriteLine("Enter a number;");
+                  string num = Console.ReadLine();
+                  int number = int.Parse(num);
+                  int i = 2;
+                  if (isprime(number))
+                      Console.WriteLine("prime");
+                  else
+                      Console.WriteLine("not prime");
+              }
+              static bool isprime(int number)
+              {
+                  if (number < 0)
+                      return false;
+                  for (int i = 2; i < number; i++)
+                  {
+                      if (number % i == 0)
+                          return false;
+                  }
+                  return true;
+        }
+    }
+}
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+              Console.WriteLine("enter a number");
+              string num = Console.ReadLine();
+              int number = int.Parse(num);
+              int i10 = number / 10;
+              number = number % 10;
+              int i5 = number / 5;
+              number = number % 5;
+              int i2 = number / 2;
+              number = number % 2;
+              int i1 = number / 1;
+              Console.WriteLine("10: " + i10 + "\n" + "5: " + i5 + "\n" + "2: " + i2 + "\n" + "1: "+ i1);
+        }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            
+              Console.WriteLine("Enter a number");
+              string num = Console.ReadLine();
+              float number = int.Parse(num);
+              if (number % 2 == 0)
+                  number = number * 2;
+              else
+                  number = number / 2;
+              Console.WriteLine(number);
+        }
+    }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+              Console.WriteLine("Enter your point");
+              string point = Console.ReadLine();
+              float point1 = int.Parse(point);
+              if (point1 < 10)
+                  Console.WriteLine("you are faild");
+              else
+                  Console.WriteLine("you are passed");
+        }
+    }
+}
+
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+              Console.WriteLine("Enter a number");
+              string number = Console.ReadLine();
+              int number1 = int.Parse(number);
+              number1 = number1 * 2;
+              Console.WriteLine(number1);
+        }
+    }
+}
+
+
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            int sum = 0;
+            Console.WriteLine("Enter the number of students:");
+            string count1 = Console.ReadLine();
+            int count = int.Parse(count1);
+            for (int i = 0; i < count; i++)
+            {
+                Console.WriteLine("Enter the number of lessons:");
+                string lessons = Console.ReadLine();
+                int lesson = int.Parse(lessons);
+                for (int j = 0; j < lesson; j++)
+                {
+                    Console.WriteLine("Enter your point:");
+                    string point1 = Console.ReadLine();
+                    int point = int.Parse(point1);
+                    sum = sum + point;
+                }
+            }
+            int Avg = sum / count;
+            Console.WriteLine(Avg);
+        }
+    }
+}
